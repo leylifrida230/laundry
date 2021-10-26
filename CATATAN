@@ -1,0 +1,21 @@
+- create folder laundry
+- npm init --y
+- install nodemon "npm install -g nodemon"
+- install sequelize untuk mempermudah pembuatan crud "npm install -g sequelize-cli"
+- install libray lokal 
+	- expree
+	- sequelize
+	- mysql2
+	- cors (untuk membuka gerbang backend <sinkronisasi>)mmebuka jalur agar backend bisa di akses untuk api yang telah di buat (frontend)
+	"npm install -- save express sequelize mysql2 cors"
+- sequelize init (membuat folder config, models, migration, seeders) HARUS DI CMD YA JANGAN TERMINAL NANTI GABISA NGUAKAK
+- membuat kerangka tabel di database melalui cmd dengan sequelize
+- edit file migrations
+- "sequelize db:migrate" untuk membuat tabel di database (real tabel)
+- buat folder router dan file server.js
+- dalam folder router buat file member.js
+- kerjakan file member (router)
+- bsmilah aman wkwkw
+- buat file paket.js (router)
+- PROSES PEMBUATAN USERS
+- INSTALL MD5 (UNTUK PASSWORD) "npm install --save md5"

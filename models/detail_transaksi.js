@@ -14,12 +14,19 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   detail_transaksi.init({
-    id_transaksi: DataTypes.INTEGER,
-    id_paket: DataTypes.INTEGER,
+    id_transaksi:{
+      type : DataTypes.INTEGER,
+      primaryKey : true
+    } ,
+    id_paket:{
+      type : DataTypes.INTEGER,
+      primaryKey : true
+    } ,
     qty: DataTypes.DOUBLE
   }, {
     sequelize,
     modelName: 'detail_transaksi',
+    tableName: 'detail_transaksi'
   });
   return detail_transaksi;
 };

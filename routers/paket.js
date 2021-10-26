@@ -64,17 +64,17 @@ app.put('/:id_paket', (request, response) => {
 })
 
 // endpoint hapus data paket
-app.delete('/:id_paket', (request, respose) => {
+app.delete('/:id_paket', (request, response) => {
     // tampung data yang akan di hapus
     let parameter = {
         id_paket: request.params.id_paket
     }
 
-    //proses hapus
+    // proses hapus
     paket.destroy({where: parameter})
     .then(result => {
         return response.json({
-            message:'Data berhasil dihapus'
+            message : 'Data Berhasil dihapus',
         })
     })
     .catch(error => {
