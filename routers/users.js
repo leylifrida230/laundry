@@ -8,6 +8,11 @@ const models = require('../models/index')
 const { request } = require('./member')
 const users = models.users
 
+// panggil fungsi auth -> validasi token
+const {auth} = require("./login")
+
+// fungsi auth di jadikan middleware
+app.use(auth)
 
 // endpoint get
 app.get('/', async (request, response) => {

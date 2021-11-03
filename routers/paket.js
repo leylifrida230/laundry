@@ -10,6 +10,12 @@ const member = require('../models/member')
 // panggil model paket
 const paket = models.paket
 
+// panggil fungsi auth -> validasi token
+const {auth} = require("./login")
+
+// fungsi auth di jadikan middleware
+app.use(auth)
+
 // end point get 
 app.get('/', async (request, response) => {
     let datapaket = await paket.findAll()

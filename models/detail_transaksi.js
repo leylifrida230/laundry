@@ -10,7 +10,10 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      // tabel detail ke tabel paket
+      this.belongsTo(models.paket, {
+        foreignKey: 'id_paket', as: 'paket'
+      })
     }
   };
   detail_transaksi.init({

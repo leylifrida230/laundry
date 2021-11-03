@@ -11,6 +11,12 @@ const models = require('../models/index')
 // panggil model member
 const member = models.member
 
+// panggil fungsi auth -> validasi token
+const {auth} = require("./login")
+
+// fungsi auth di jadikan middleware
+app.use(auth)
+
 // end point for get all member
 app.get("/", async (request, response) => {
     let datamember = await member.findAll()
