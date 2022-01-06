@@ -19,3 +19,12 @@
 - buat file paket.js (router)
 - PROSES PEMBUATAN USERS
 - INSTALL MD5 (UNTUK PASSWORD) "npm install --save md5"
+- USERS PUT MASIH BERMASALAH
+- tabel transaksi manggil 2 model transaksi & detail transaksi
+- for more penjelasan refiew yt lage
+- ke model transaksi bikin relasi baru
+- bikin relasi juga di models detail transaksi
+- itu in relasinya di get router transaksi
+- menyelesaikan transaksi
+- install JWT
+JWT.IO BUAT NGE CEK JWT

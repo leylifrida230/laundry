@@ -39,7 +39,8 @@ module.exports = (sequelize, DataTypes) => {
     status: DataTypes.INTEGER,
     dibayar: DataTypes.INTEGER,
     id_user: DataTypes.INTEGER
-  }, {
+  }, 
+  {
     sequelize,
     modelName: 'transaksi',
     tableName: 'transaksi'
