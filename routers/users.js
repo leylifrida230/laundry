@@ -12,7 +12,7 @@ const users = models.users
 const {auth} = require("./login")
 
 // fungsi auth di jadikan middleware
-app.use(auth)
+// app.use(auth)
 
 // endpoint get
 app.get('/', async (request, response) => {

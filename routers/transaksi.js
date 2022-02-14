@@ -12,7 +12,7 @@ const detail_transaksi = models.detail_transaksi
 const {auth} = require("./login")
 
 // fungsi auth di jadikan middleware
-app.use(auth)
+//app.use(auth)
 
 app.get('/', async (request, response) => {
     let dataTransaksi = await transaksi.findAll({
